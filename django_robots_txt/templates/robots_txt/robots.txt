@@ -1,0 +1,12 @@
+{% if allow %}
+User-agent: *
+Disallow: {% for path in disallow %}{{ path }}
+{% endfor %}
+{% else %}
+User-agent: *
+Disallow: /
+{% endif %}
+
+{% if sitemap_url %}
+Sitemap: {{ sitemap_url }}
+{% endif %}

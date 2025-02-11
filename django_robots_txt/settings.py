@@ -1,0 +1,5 @@
+DEFAULT_ROBOTS_SETTINGS = {
+    'ROBOTS_ALLOW': True,
+    'ROBOTS_DISALLOW': [],
+    'ROBOTS_SITEMAP_URL': None,
+}

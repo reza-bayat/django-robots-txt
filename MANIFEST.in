@@ -1,0 +1,1 @@
+include django_robots_txt/templates/robots_txt/robots.txt
