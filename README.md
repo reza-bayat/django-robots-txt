@@ -30,7 +30,8 @@ pip install -e /path/to/django-robots-txt
 **1- Add to** `INSTALLED_APPS` **:**
 
 Add `'django_robots_txt'` to your `INSTALLED_APPS` in `settings.py`:
-```bash
+
+```python
 INSTALLED_APPS = [
     ...
     'django_robots_txt',
@@ -40,7 +41,7 @@ INSTALLED_APPS = [
 **2- Configure Settings :**
 Configure the following settings in your `settings.py`:
 
-```bash
+```python
 # Optional: Sitemap URL
 ROBOTS_USE_SITEMAP = True  # Optional: Whether to include the sitemap
 ROBOTS_RULES = {
@@ -59,7 +60,7 @@ Include the package's URLs in your project's `urls.py`:
 
 from django.urls import include, path
 
-```bash
+```python
 urlpatterns = [
     ...
     path('', include('django_robots_txt.urls')),
@@ -86,7 +87,7 @@ Sitemap: https://example.com/sitemap.xml
 **1- Customizing Rules**
 You can define complex rules for multiple user-agents. For example:
 
-```bash
+```python
 ROBOTS_RULES = {
     '*': {
         'allow': ['/public/'],
@@ -104,7 +105,7 @@ ROBOTS_RULES = {
 **2- Disabling Sitemap**
 If you don't want to include a sitemap, set `ROBOTS_USE_SITEMAP` to `False`:
 
-```bash
+```python
 ROBOTS_USE_SITEMAP = False
 ```
 
