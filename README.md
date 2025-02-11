@@ -19,6 +19,13 @@ Install the package using `pip`:
 pip install django-robots-txt
 ```
 
+Alternatively, if you're installing from a local source:
+
+```bash
+pip install -e /path/to/django-robots-txt
+```
+
+
 ## Configuration
 **1- Add to** `INSTALLED_APPS` **:**
 
